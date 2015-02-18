@@ -1,4 +1,4 @@
-# [Kata Seeds](https://github.com/kata-seeds): Language (+ optionally a test framework)
+# [Kata Seeds](http://kata-seeds.github.io): Language (+ optionally a test framework)
 [![Build Status](https://travis-ci.org/kata-seeds/language-seed.svg?branch=master)](https://travis-ci.org/kata-seeds/language-seed)
 
 ## Getting Started
