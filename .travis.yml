@@ -1,2 +1,6 @@
-language: # TODO: see http://docs.travis-ci.com for more information
-script: make
+language: mit-scheme
+before_install:
+  - sudo apt-get update -qq
+  - sudo apt-get install -y mit-scheme
+  - sudo apt-get install -y rlwrap
+script: make test

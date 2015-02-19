@@ -1,11 +1,15 @@
 all: dependencies test
 
-test:
-	# TODO: Run the tests here
+base_filename=kata
 
 dependencies:
-	# TODO: Check to see if dependencies are satisfied, and install them if
-	# not. You can use the bash `||` operator to easily take action on a
-	# failure.
+	which mit-scheme >/dev/null 2>&1 || brew install mit-scheme
+	which rlwrap >/dev/null 2>&1 || brew install rlwrap
 
-.PHONY: all dependencies test
+test:
+	echo | mit-scheme --batch-mode --load $(base_filename)_test.scm
+
+repl:
+	rlwrap mit-scheme --load $(base_filename).scm
+
+.PHONY: all dependencies test repl
