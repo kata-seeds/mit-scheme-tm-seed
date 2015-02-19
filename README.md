@@ -1,5 +1,5 @@
 # [Kata Seeds]: [MIT/GNU Scheme] + [test-manager]
-[![Build Status](https://travis-ci.org/kata-seeds/mit-scheme-test-manager-seed.svg?branch=master)](https://travis-ci.org/kata-seeds/mit-scheme-test-manager-seed)
+[![Build Status](https://travis-ci.org/kata-seeds/mit-scheme-tm-seed.svg?branch=master)](https://travis-ci.org/kata-seeds/mit-scheme-tm-seed)
 
 [Kata Seeds]: http://kata-seeds.github.io
 [MIT/GNU Scheme]: http://www.gnu.org/software/mit-scheme/
@@ -9,8 +9,8 @@
 
 Clone this repo and its submodule with `git`:
 
-    git clone --recursive https://github.com/kata-seeds/mit-scheme-test-manager-seed.git
-    cd mit-scheme-test-manager-seed
+    git clone --recursive https://github.com/kata-seeds/mit-scheme-tm-seed.git
+    cd mit-scheme-tm-seed
 
 Install dependencies and run your tests with `make`:
 
