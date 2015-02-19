@@ -1,6 +1,9 @@
 language: mit-scheme
+# Travis CI doesn't support any such language "mit-scheme", but that's okay. Travis CI will just use its default Ruby environment, which also works.
+
 before_install:
   - sudo apt-get update -qq
   - sudo apt-get install -y mit-scheme
   - sudo apt-get install -y rlwrap
+
 script: make test
