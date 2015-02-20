@@ -3,8 +3,8 @@ all: dependencies test
 base_filename=kata
 
 dependencies:
-	which mit-scheme >/dev/null 2>&1 || brew install mit-scheme
-	which rlwrap >/dev/null 2>&1 || brew install rlwrap
+	which mit-scheme || brew install homebrew/x11/mit-scheme
+	which rlwrap || brew install rlwrap
 
 test:
 	echo | mit-scheme --batch-mode --load $(base_filename)_test.scm
